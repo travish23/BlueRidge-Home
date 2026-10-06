@@ -86,16 +86,15 @@ export default function GalleryGrid() {
 
   return (
     <>
-      {/* Filter tabs */}
-      <div className="flex gap-2 flex-wrap justify-center mb-10">
+      <div className="mb-10 flex flex-wrap justify-center gap-1 border-b border-neutral-200">
         {tabs.map(({ label, value }) => (
           <button
             key={value}
             onClick={() => setActive(value)}
-            className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
+            className={`border-b-2 px-5 py-3 text-xs font-bold uppercase tracking-[0.1em] transition-colors ${
               active === value
-                ? "bg-midnight text-white"
-                : "bg-midnight-muted text-midnight hover:bg-midnight-border"
+                ? "border-accent text-midnight"
+                : "border-transparent text-neutral-700 hover:text-midnight"
             }`}
           >
             {label}
@@ -103,12 +102,11 @@ export default function GalleryGrid() {
         ))}
       </div>
 
-      {/* Photo grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((photo, i) => (
           <button
             key={photo.src}
-            className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-midnight focus:ring-offset-2"
+            className="group relative aspect-[4/3] cursor-pointer overflow-hidden focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
             onClick={() => setLightboxIndex(i)}
             aria-label={`View: ${photo.title}`}
           >
@@ -119,9 +117,9 @@ export default function GalleryGrid() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
-            <div className="absolute inset-0 bg-midnight/0 group-hover:bg-midnight/40 transition-colors duration-300 flex items-end">
-              <div className="translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 p-4 w-full">
-                <p className="text-white font-semibold text-sm leading-tight">
+            <div className="absolute inset-0 flex items-end bg-gradient-to-t from-midnight/80 via-transparent to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="w-full translate-y-2 p-5 text-left opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <p className="text-sm font-semibold leading-tight text-white">
                   {photo.title}
                 </p>
               </div>

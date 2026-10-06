@@ -92,8 +92,7 @@ export default function AboutPage() {
       <JsonLd schema={breadcrumbSchema} />
       <JsonLd schema={companySchema} />
 
-      {/* Page hero */}
-      <section className="relative h-64 sm:h-80 flex items-center justify-center overflow-hidden">
+      <section className="relative flex h-[360px] items-end overflow-hidden sm:h-[440px]">
         <Image
           src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=1920&q=80"
           alt="Blue Ridge Construction team at work"
@@ -102,26 +101,25 @@ export default function AboutPage() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-midnight/65" />
-        <div className="relative z-10 text-center text-white px-4">
-          <p className="text-sm font-semibold uppercase tracking-widest text-white/70 mb-2">
-            Our Company
-          </p>
-          <h1 className="text-3xl sm:text-5xl font-bold">About Us</h1>
+        <div className="absolute inset-0 bg-gradient-to-r from-midnight-dark/95 via-midnight/70 to-midnight/20" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 text-white sm:px-6 sm:pb-16">
+          <p className="eyebrow">Our company</p>
+          <h1 className="display-type mt-4 max-w-3xl text-5xl leading-none sm:text-7xl">
+            Built on trust.
+            <span className="block text-white/65">Driven by craft.</span>
+          </h1>
         </div>
       </section>
 
       {/* Story */}
-      <section className="bg-white py-20 px-4">
+      <section className="bg-neutral-50 px-4 py-24 sm:px-6 lg:py-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-midnight mb-3">
-              Our Story
-            </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            <p className="eyebrow">Our story</p>
+            <h2 className="display-type mb-7 mt-5 text-4xl leading-tight text-neutral-900 sm:text-5xl">
               Built on Hard Work &amp; Honest Values
             </h2>
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+            <div className="space-y-4 text-neutral-700 leading-7">
               <p>
                 Blue Ridge Construction was founded in 2009 by Travis Hughes, a
                 third-generation builder with a deep passion for craftsmanship and
@@ -142,12 +140,12 @@ export default function AboutPage() {
             </div>
             <Link
               href="/contact"
-              className="mt-8 inline-block rounded-md border border-midnight/15 bg-white px-8 py-3 font-semibold text-midnight shadow-[0_12px_26px_rgba(11,31,53,0.1)] transition-colors hover:bg-midnight hover:text-white"
+              className="mt-8 inline-block bg-accent px-7 py-4 text-sm font-bold text-white transition-colors hover:bg-accent-dark"
             >
               Start Your Project
             </Link>
           </div>
-          <div className="relative h-80 lg:h-full min-h-[400px] rounded-xl overflow-hidden">
+          <div className="relative h-80 min-h-[420px] overflow-hidden lg:h-full">
             <Image
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
               alt="Construction team planning a custom home build"
@@ -160,29 +158,27 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="bg-white py-20 px-4">
+      <section className="bg-neutral-100 px-4 py-24 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-sm font-semibold uppercase tracking-widest text-midnight mb-3">
-              What Drives Us
-            </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            <p className="eyebrow">What drives us</p>
+            <h2 className="display-type mt-5 text-4xl text-neutral-900 sm:text-5xl">
               Our Core Values
             </h2>
           </div>
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-px overflow-hidden bg-neutral-200 sm:grid-cols-2 lg:grid-cols-3">
             {values.map(({ icon: Icon, title, description }) => (
               <div
                 key={title}
-                className="rounded-xl border border-neutral-200 bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md"
+                className="bg-white p-8 text-left sm:p-10"
               >
-                <div className="flex justify-center mb-4">
-                  <div className="rounded-full bg-neutral-100 p-3">
+                <div className="mb-8">
+                  <div className="flex h-12 w-12 items-center justify-center bg-midnight-muted">
                     <Icon className="w-6 h-6 text-midnight" />
                   </div>
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">{title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{description}</p>
+                <h3 className="display-type mb-3 text-2xl text-neutral-900">{title}</h3>
+                <p className="text-sm leading-6 text-neutral-700">{description}</p>
               </div>
             ))}
           </div>
@@ -190,21 +186,19 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="bg-white py-20 px-4">
+      <section className="bg-neutral-50 px-4 py-24 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-sm font-semibold uppercase tracking-widest text-midnight mb-3">
-              The People Behind the Work
-            </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            <p className="eyebrow">The people behind the work</p>
+            <h2 className="display-type mt-5 text-4xl text-neutral-900 sm:text-5xl">
               Meet Our Team
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {team.map(({ name, role }) => (
               <div key={name} className="text-center">
-                <div className="w-28 h-28 mx-auto rounded-full bg-midnight-muted border-2 border-midnight-border flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold text-midnight">
+                <div className="mx-auto mb-5 flex h-32 w-32 items-center justify-center bg-midnight-muted">
+                  <span className="display-type text-4xl text-midnight">
                     {name.charAt(0)}
                   </span>
                 </div>

@@ -28,8 +28,7 @@ export default function GalleryPage() {
     <>
       <JsonLd schema={breadcrumbSchema} />
 
-      {/* Page hero */}
-      <section className="relative h-64 sm:h-80 flex items-center justify-center overflow-hidden">
+      <section className="relative flex h-[360px] items-end overflow-hidden sm:h-[440px]">
         <Image
           src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80"
           alt="Blue Ridge Construction project portfolio"
@@ -38,20 +37,20 @@ export default function GalleryPage() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-midnight/65" />
-        <div className="relative z-10 text-center text-white px-4">
-          <p className="text-sm font-semibold uppercase tracking-widest text-white/70 mb-2">
-            Our Portfolio
-          </p>
-          <h1 className="text-3xl sm:text-5xl font-bold">Project Gallery</h1>
-          <p className="mt-3 text-white/75 max-w-xl mx-auto">
+        <div className="absolute inset-0 bg-gradient-to-r from-midnight-dark/95 via-midnight/70 to-midnight/20" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 text-white sm:px-6 sm:pb-16">
+          <p className="eyebrow">Our portfolio</p>
+          <h1 className="display-type mt-4 text-5xl leading-none sm:text-7xl">
+            Work worth sharing.
+          </h1>
+          <p className="mt-4 max-w-xl text-white/70">
             Renovations, custom builds, and transformations we&apos;re proud of.
           </p>
         </div>
       </section>
 
       {/* Gallery */}
-      <section className="bg-white py-16 px-4">
+      <section className="bg-neutral-50 px-4 py-20 sm:px-6 lg:py-24">
         <div className="max-w-7xl mx-auto">
           <GalleryGrid />
         </div>

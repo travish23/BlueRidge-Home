@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
@@ -23,31 +23,40 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-neutral-50 px-4 py-20">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-14 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-midnight">
-            Client Reviews
-          </p>
-          <h2 className="text-3xl font-bold text-neutral-900 sm:text-4xl">
-            What Homeowners Say
+    <section className="bg-neutral-50 px-4 py-24 sm:px-6 lg:py-32">
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.72fr_1.28fr]">
+        <div>
+          <p className="eyebrow">Kind words</p>
+          <h2 className="display-type mt-5 text-5xl leading-[1.04] text-neutral-900 sm:text-6xl">
+            The trust behind every project.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-neutral-700">
-            Trusted by families across the Blue Ridge region for quality work and
-            dependable service.
+          <p className="mt-6 max-w-sm leading-7 text-neutral-700">
+            The best measure of our work is how homeowners feel when the dust
+            settles and their space becomes home again.
           </p>
+          <div className="mt-8 flex gap-1 text-accent">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <Star key={star} className="h-4 w-4 fill-current" />
+            ))}
+            <span className="ml-2 text-xs font-bold uppercase tracking-[0.12em] text-midnight">
+              5-star client care
+            </span>
+          </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+
+        <div className="border-t border-neutral-200">
           {testimonials.map(({ quote, name, project }) => (
             <article
               key={name}
-              className="rounded-2xl border border-neutral-200 bg-white p-7 shadow-[0_18px_42px_rgba(15,23,42,0.08)]"
+              className="grid gap-5 border-b border-neutral-200 py-8 sm:grid-cols-[2.5rem_1fr_auto] sm:gap-6"
             >
-              <Quote className="mb-4 h-7 w-7 text-midnight/45" />
-              <p className="text-sm leading-relaxed text-neutral-700">{quote}</p>
-              <div className="mt-6 border-t border-neutral-200 pt-5">
-                <p className="font-semibold text-neutral-900">{name}</p>
-                <p className="text-xs uppercase tracking-wide text-neutral-700">
+              <Quote className="h-7 w-7 text-accent/60" strokeWidth={1.5} />
+              <p className="display-type text-xl leading-8 text-neutral-900 sm:text-2xl">
+                “{quote}”
+              </p>
+              <div className="sm:w-40 sm:text-right">
+                <p className="text-sm font-bold text-neutral-900">{name}</p>
+                <p className="mt-1 text-[10px] font-semibold uppercase leading-4 tracking-[0.1em] text-neutral-700">
                   {project}
                 </p>
               </div>

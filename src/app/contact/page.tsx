@@ -56,7 +56,7 @@ export default function ContactPage() {
     <>
       <JsonLd schema={breadcrumbSchema} />
 
-      <section className="relative h-64 sm:h-80 flex items-center justify-center overflow-hidden">
+      <section className="relative flex h-[360px] items-end overflow-hidden sm:h-[440px]">
         <Image
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
           alt="Contact Blue Ridge Construction"
@@ -65,20 +65,20 @@ export default function ContactPage() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-midnight/65" />
-        <div className="relative z-10 text-center text-white px-4">
-          <p className="text-sm font-semibold uppercase tracking-widest text-white/70 mb-2">
-            Let&apos;s Build Something Great
-          </p>
-          <h1 className="text-3xl sm:text-5xl font-bold">Get in Touch</h1>
-          <p className="mt-3 text-white/75 max-w-xl mx-auto">
+        <div className="absolute inset-0 bg-gradient-to-r from-midnight-dark/95 via-midnight/70 to-midnight/20" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 text-white sm:px-6 sm:pb-16">
+          <p className="eyebrow">Let&apos;s build something great</p>
+          <h1 className="display-type mt-4 text-5xl leading-none sm:text-7xl">
+            Start a conversation.
+          </h1>
+          <p className="mt-4 max-w-xl text-white/70">
             Free estimates, no obligation, and expert guidance from first call to
             final walkthrough.
           </p>
         </div>
       </section>
 
-      <section className="bg-slate-100/60 px-4 py-16 sm:py-20">
+      <section className="bg-neutral-100 px-4 py-16 sm:px-6 sm:py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_24px_60px_rgba(15,23,42,0.08)] sm:p-8 lg:p-10">
             <div className="mb-8 flex items-start justify-between gap-4">

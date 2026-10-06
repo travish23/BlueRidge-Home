@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-midnight: #0b1f35;
-  --color-midnight-light: #14365b;
-  --color-midnight-dark: #040b13;
-  --color-midnight-muted: #e7eef7;
-  --color-midnight-border: #b7c4d4;
-  --color-neutral-50: #f8fafc;
-  --color-neutral-100: #f1f5f9;
-  --color-neutral-200: #e2e8f0;
-  --color-neutral-700: #334155;
-  --color-neutral-900: #0f172a;
-  --color-accent: #0b1f35;
-  --color-accent-dark: #081a2a;
-  --color-accent-soft: #dfeaf7;
+  --color-midnight: #102a43;
+  --color-midnight-light: #1f4b6e;
+  --color-midnight-dark: #081b2b;
+  --color-midnight-muted: #e7eef2;
+  --color-midnight-border: #b8c8d2;
+  --color-neutral-50: #f8f7f3;
+  --color-neutral-100: #f0eee8;
+  --color-neutral-200: #dedbd2;
+  --color-neutral-700: #4c5356;
+  --color-neutral-900: #172126;
+  --color-accent: #c87b45;
+  --color-accent-dark: #9f5d32;
+  --color-accent-soft: #f5e8dc;
 }
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #f8f7f3;
+  --foreground: #172126;
 }
 
 html {
@@ -28,4 +28,43 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #c87b45;
+  color: #fff;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid #c87b45;
+  outline-offset: 3px;
+}
+
+.display-type {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: #c87b45;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 2rem;
+  height: 1px;
+  content: "";
+  background: currentColor;
 }
