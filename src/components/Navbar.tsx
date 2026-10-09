@@ -28,7 +28,7 @@ export default function Navbar() {
             href="tel:+15617277495"
             className="flex items-center gap-2 transition-colors hover:text-white"
           >
-            <Phone className="h-3 w-3 text-accent" />
+            <Phone className="h-3 w-3 text-accent-light" />
             (561) 727-7495
           </a>
         </div>

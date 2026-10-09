@@ -11,9 +11,10 @@
   --color-neutral-200: #dedbd2;
   --color-neutral-700: #4c5356;
   --color-neutral-900: #172126;
-  --color-accent: #c87b45;
-  --color-accent-dark: #9f5d32;
-  --color-accent-soft: #f5e8dc;
+  --color-accent: #347ba3;
+  --color-accent-dark: #245a7b;
+  --color-accent-light: #76bddf;
+  --color-accent-soft: #e0eef5;
 }
 
 :root {
@@ -32,7 +33,7 @@ body {
 }
 
 ::selection {
-  background: #c87b45;
+  background: #347ba3;
   color: #fff;
 }
 
@@ -42,7 +43,7 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid #c87b45;
+  outline: 2px solid #347ba3;
   outline-offset: 3px;
 }
 
@@ -55,7 +56,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.625rem;
-  color: #c87b45;
+  color: #347ba3;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -67,4 +68,8 @@ button {
   height: 1px;
   content: "";
   background: currentColor;
+}
+
+.text-white .eyebrow {
+  color: #76bddf;
 }

@@ -27,7 +27,7 @@ export default function StatsBar() {
               key={number}
               className="min-h-44 border-b border-r border-white/15 p-6 sm:p-7"
             >
-              <p className="text-xs font-bold tracking-[0.16em] text-accent">{number}</p>
+              <p className="text-xs font-bold tracking-[0.16em] text-accent-light">{number}</p>
               <h3 className="display-type mt-7 text-2xl">{title}</h3>
               <p className="mt-2 text-sm leading-6 text-white/55">{detail}</p>
             </div>

@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-5 text-[10px] font-bold uppercase tracking-[0.2em] text-accent">
+            <h3 className="mb-5 text-[10px] font-bold uppercase tracking-[0.2em] text-accent-light">
               Explore
             </h3>
             <ul className="space-y-3">
@@ -53,22 +53,22 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-5 text-[10px] font-bold uppercase tracking-[0.2em] text-accent">
+            <h3 className="mb-5 text-[10px] font-bold uppercase tracking-[0.2em] text-accent-light">
               Start a conversation
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm leading-6 text-white/65">
-                <MapPin className="mt-1 h-4 w-4 shrink-0 text-accent" />
+                <MapPin className="mt-1 h-4 w-4 shrink-0 text-accent-light" />
                 <span>123 Ridge Top Drive, Asheville, NC 28801</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-white/65">
-                <Phone className="h-4 w-4 shrink-0 text-accent" />
+                <Phone className="h-4 w-4 shrink-0 text-accent-light" />
                 <a href="tel:+15617277495" className="hover:text-white transition-colors">
                   (561) 727-7495
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-white/65">
-                <Mail className="h-4 w-4 shrink-0 text-accent" />
+                <Mail className="h-4 w-4 shrink-0 text-accent-light" />
                 <a
                   href="mailto:info@blueridge.construction"
                   className="hover:text-white transition-colors"

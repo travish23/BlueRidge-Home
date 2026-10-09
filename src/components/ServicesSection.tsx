@@ -72,14 +72,14 @@ export default function ServicesSection() {
                     key={f}
                     className="flex items-center gap-2 text-xs font-semibold text-neutral-700 transition-colors group-hover:text-white/75"
                   >
-                    <Check className="h-3.5 w-3.5 shrink-0 text-accent" />
+                    <Check className="h-3.5 w-3.5 shrink-0 text-accent group-hover:text-accent-light" />
                     {f}
                   </li>
                 ))}
               </ul>
               <Link
                 href="/contact"
-                className="mt-9 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-midnight transition-colors group-hover:text-accent"
+                className="mt-9 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-midnight transition-colors group-hover:text-accent-light"
               >
                 Plan this project
                 <ArrowUpRight className="h-4 w-4" />

@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-8 pt-28 sm:px-6 sm:pb-10 lg:pb-12 lg:pt-36">
         <div className="max-w-3xl">
           <div className="mb-7 inline-flex items-center gap-2 border border-white/15 bg-white/10 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-white/80 backdrop-blur-sm">
-            <BadgeCheck className="h-4 w-4 text-accent" />
+            <BadgeCheck className="h-4 w-4 text-accent-light" />
             Trusted craftsmanship since 2009
           </div>
           <h1 className="display-type max-w-3xl text-[3.3rem] leading-[0.98] tracking-[-0.035em] text-white sm:text-7xl lg:text-[5.7rem]">
@@ -61,7 +61,7 @@ export default function HeroSection() {
             </p>
           </div>
           <div className="hidden border-l border-white/20 pl-7 sm:block">
-            <p className="flex h-9 items-center gap-1 text-accent">
+            <p className="flex h-9 items-center gap-1 text-accent-light">
               {[1, 2, 3, 4, 5].map((star) => (
                 <Star key={star} className="h-4 w-4 fill-current" />
               ))}
