@@ -11,10 +11,10 @@
   --color-neutral-200: #dedbd2;
   --color-neutral-700: #4c5356;
   --color-neutral-900: #172126;
-  --color-accent: #347ba3;
-  --color-accent-dark: #245a7b;
-  --color-accent-light: #76bddf;
-  --color-accent-soft: #e0eef5;
+  --color-accent: #59788d;
+  --color-accent-dark: #3f5c6f;
+  --color-accent-light: #8cb0c3;
+  --color-accent-soft: #e6edf0;
 }
 
 :root {
@@ -33,7 +33,7 @@ body {
 }
 
 ::selection {
-  background: #347ba3;
+  background: #59788d;
   color: #fff;
 }
 
@@ -43,7 +43,7 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid #347ba3;
+  outline: 2px solid #59788d;
   outline-offset: 3px;
 }
 
@@ -56,7 +56,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.625rem;
-  color: #347ba3;
+  color: #59788d;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -71,5 +71,5 @@ button {
 }
 
 .text-white .eyebrow {
-  color: #76bddf;
+  color: #8cb0c3;
 }
