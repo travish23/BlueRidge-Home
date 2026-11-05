@@ -9,12 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "lucide-react": "^1.17.0",
     "next": "16.2.7",
     "next-cloudinary": "^6.17.5",
     "nodemailer": "^10.0.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "uuid": "^14.0.3",
     "yet-another-react-lightbox": "^3.32.0"
   },
   "devDependencies": {

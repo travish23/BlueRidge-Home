@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
@@ -16,57 +15,57 @@ type Photo = {
 
 const photos: Photo[] = [
   {
-    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
-    alt: "Modern kitchen renovation with custom cabinetry",
-    title: "Modern Kitchen Remodel — Asheville",
+    src: "",
+    alt: "",
+    title: "",
     category: "renovation",
   },
   {
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    alt: "Custom new home exterior — mountain craftsman style",
-    title: "Mountain Craftsman Build — Weaverville",
-    category: "new-build",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-    alt: "Spa-inspired master bathroom renovation",
-    title: "Master Bath Renovation — Black Mountain",
+    src: "",
+    alt: "",
+    title: "",
     category: "renovation",
   },
   {
-    src: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80",
-    alt: "Open-concept kitchen and dining renovation",
-    title: "Open-Concept Kitchen — Hendersonville",
+    src: "",
+    alt: "",
+    title: "",
     category: "renovation",
   },
   {
-    src: "https://images.unsplash.com/photo-1560184897-ae75f418493e?w=800&q=80",
-    alt: "Custom new build living room with vaulted ceilings",
-    title: "Custom Living Room — Burnsville",
-    category: "new-build",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
-    alt: "Residential new construction framing phase",
-    title: "New Residential Build — Swannanoa",
-    category: "new-build",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80",
-    alt: "Deck and outdoor living addition",
-    title: "Outdoor Living Addition — Arden",
+    src: "",
+    alt: "",
+    title: "",
     category: "renovation",
   },
   {
-    src: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80",
-    alt: "Custom master bedroom with built-in storage",
-    title: "Master Suite — Custom Build",
-    category: "new-build",
+    src: "",
+    alt: "",
+    title: "",
+    category: "renovation",
   },
   {
-    src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80",
-    alt: "Whole-home exterior renovation with new siding",
-    title: "Exterior Renovation — Asheville",
+    src: "",
+    alt: "",
+    title: "",
+    category: "renovation",
+  },
+  {
+    src: "",
+    alt: "",
+    title: "",
+    category: "renovation",
+  },
+  {
+    src: "",
+    alt: "",
+    title: "",
+    category: "renovation",
+  },
+  {
+    src: "",
+    alt: "",
+    title: "",
     category: "renovation",
   },
 ];

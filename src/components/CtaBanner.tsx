@@ -7,15 +7,12 @@ export default function CtaBanner() {
       <div className="mx-auto max-w-7xl overflow-hidden bg-accent text-white">
         <div className="grid lg:grid-cols-[1fr_auto] lg:items-end">
           <div className="p-8 sm:p-12 lg:p-16">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/65">
-              Have a project in mind?
-            </p>
+
             <h2 className="display-type mt-5 max-w-3xl text-5xl leading-[1.02] sm:text-6xl lg:text-7xl">
               Let&apos;s build something worth keeping.
             </h2>
             <p className="mt-6 max-w-lg leading-7 text-white/75">
-              Share your ideas with us. We&apos;ll listen, ask the right questions,
-              and help you understand the best path forward.
+              Share your vision with us. We'll help bring it to life.
             </p>
           </div>
           <div className="flex flex-col border-t border-white/20 p-8 sm:flex-row lg:w-80 lg:flex-col lg:border-l lg:border-t-0 lg:p-10">

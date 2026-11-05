@@ -80,10 +80,9 @@ const values = [
 ];
 
 const team = [
-  { name: "Travis Hughes", role: "Founder & General Contractor", img: null },
-  { name: "Maria Ortega", role: "Project Manager", img: null },
-  { name: "Derek Cole", role: "Lead Carpenter", img: null },
-  { name: "Lisa Park", role: "Interior Design Consultant", img: null },
+  { name: "Joseph Hughes", role: "Founder & General Contractor", img: null },
+  { name: "Tom Irwin", role: "Founder & General Contractor", img: null },
+ 
 ];
 
 export default function AboutPage() {
@@ -121,14 +120,10 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-neutral-700 leading-7">
               <p>
-                Blue Ridge Construction was founded in 2009 by Travis Hughes, a
-                third-generation builder with a deep passion for craftsmanship and
-                community. Starting with a single crew and a commitment to doing the
-                job right, we&apos;ve grown into one of Western North Carolina&apos;s most
-                trusted construction firms.
+                Blue Ridge Construction was founded by Joseph Hughes.
               </p>
               <p>
-                Over 15 years and 500+ completed projects later, we still operate
+                Over 30 years of experience and 500+ completed projects later, we still operate
                 with the same founding principles: show up on time, keep your word,
                 and take pride in every square foot you build.
               </p>

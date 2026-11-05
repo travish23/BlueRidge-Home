@@ -1,8 +1,7 @@
 const steps = [
-  { number: "01", title: "Listen", detail: "Your needs, style, and priorities." },
-  { number: "02", title: "Plan", detail: "Clear scope, budget, and timeline." },
-  { number: "03", title: "Build", detail: "Skilled work with regular updates." },
-  { number: "04", title: "Deliver", detail: "A final result made to endure." },
+  { number: "01", title: "Plan", detail: "Your needs, style, and priorities." },
+  { number: "02", title: "Build", detail: "Skilled work with regular updates." },
+  { number: "03", title: "Deliver", detail: "A final result made to endure." },
 ];
 
 export default function StatsBar() {
@@ -21,7 +20,7 @@ export default function StatsBar() {
             informed and your project moving forward.
           </p>
         </div>
-        <div className="grid border-l border-t border-white/15 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid border-l border-t border-white/15 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map(({ number, title, detail }) => (
             <div
               key={number}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import GalleryGrid from "@/components/GalleryGrid";
 import JsonLd from "@/components/JsonLd";
+import { v4 as uuid } from "uuid";
 
 export const metadata: Metadata = {
   title: "Project Gallery",
@@ -52,7 +53,9 @@ export default function GalleryPage() {
       {/* Gallery */}
       <section className="bg-neutral-50 px-4 py-20 sm:px-6 lg:py-24">
         <div className="max-w-7xl mx-auto">
-          <GalleryGrid />
+          <GalleryGrid 
+            key={uuid()}
+          />
         </div>
       </section>
     </>

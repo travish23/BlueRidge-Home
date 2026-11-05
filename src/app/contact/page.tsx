@@ -37,12 +37,7 @@ const contactDetails = [
     value: "info@blueridge.construction",
     href: "mailto:info@blueridge.construction",
   },
-  {
-    icon: MapPin,
-    label: "Address",
-    value: "",
-    href: null,
-  },
+
   {
     icon: Clock,
     label: "Hours",
@@ -77,7 +72,7 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
-
+    
       <section className="bg-neutral-100 px-4 py-16 sm:px-6 sm:py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_24px_60px_rgba(15,23,42,0.08)] sm:p-8 lg:p-10">

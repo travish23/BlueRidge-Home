@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, Mountain, Phone, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "Our Story" },
+  { href: "/about", label: "About Us" },
   { href: "/gallery", label: "Projects" },
   { href: "/contact", label: "Contact" },
 ];
@@ -40,17 +41,14 @@ export default function Navbar() {
             href="/"
             className="group flex shrink-0 items-center gap-3 text-midnight"
           >
-            <span className="flex h-10 w-10 items-center justify-center bg-midnight text-white transition-colors group-hover:bg-accent">
-              <Mountain className="h-5 w-5" strokeWidth={1.75} />
-            </span>
-            <span className="leading-none">
-              <span className="block text-[17px] font-extrabold tracking-[-0.04em]">
-                BLUE RIDGE
-              </span>
-              <span className="mt-1 block text-[8px] font-bold uppercase tracking-[0.3em] text-midnight/55">
-                Construction
-              </span>
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Blue Ridge Construction"
+              width={200}
+              height={100}
+              className="object-contain"
+              style={{ zIndex: "1000!important" }}
+            />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">

@@ -15,9 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-[1.35fr_0.65fr_1fr]">
           <div className="max-w-sm">
             <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center border border-white/20 bg-white/5">
-                <Mountain className="h-5 w-5 text-white" strokeWidth={1.75} />
-              </span>
+              
               <span className="leading-none">
                 <span className="block text-[17px] font-extrabold tracking-[-0.04em]">
                   BLUE RIDGE
@@ -28,8 +26,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-6 text-sm leading-7 text-white/55">
-              Building exceptional homes and transforming spaces across the Blue
-              Ridge region. Quality craftsmanship since 2009.
+              Building exceptional homes and transforming spaces across Florida and North Carolina.
             </p>
           </div>
 
@@ -57,10 +54,6 @@ export default function Footer() {
               Start a conversation
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-sm leading-6 text-white/65">
-                <MapPin className="mt-1 h-4 w-4 shrink-0 text-accent-light" />
-                <span>123 Ridge Top Drive, Asheville, NC 28801</span>
-              </li>
               <li className="flex items-center gap-3 text-sm text-white/65">
                 <Phone className="h-4 w-4 shrink-0 text-accent-light" />
                 <a href="tel:+15617277495" className="hover:text-white transition-colors">

@@ -49,7 +49,7 @@ export default function FeaturedGallery() {
           <div>
             <p className="eyebrow">Selected work</p>
             <h2 className="display-type mt-5 text-5xl leading-none text-neutral-900 sm:text-6xl">
-              Spaces with soul.
+              Spaces made to feel like Home
             </h2>
           </div>
           <Link
@@ -98,12 +98,6 @@ export default function FeaturedGallery() {
           ))}
         </div>
 
-        <div className="mt-6 flex items-center gap-4 text-sm text-neutral-700">
-          <span className="h-px w-10 bg-accent" />
-          <p>
-            Renovations and new builds across Western North Carolina.
-          </p>
-        </div>
       </div>
     </section>
   );
